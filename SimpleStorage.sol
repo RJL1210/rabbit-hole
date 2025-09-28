@@ -14,4 +14,13 @@ contract SimpleStorage {
     function get() public view returns (uint256) {
         return storedData;
     }
+
+    struct Person {
+        string name;
+        uint256 age;
+    }
+
+    Person public pat = Person({name: "Patrick", age: 30});
+
+    Person[] public people;
 }
